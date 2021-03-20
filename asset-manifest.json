@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/react-essentials/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/react-essentials/static/js/main.2d4a3cd2.chunk.js",
+    "main.js.map": "/react-essentials/static/js/main.2d4a3cd2.chunk.js.map",
+    "runtime-main.js": "/react-essentials/static/js/runtime-main.c679ce09.js",
+    "runtime-main.js.map": "/react-essentials/static/js/runtime-main.c679ce09.js.map",
+    "static/js/2.9c6ad89e.chunk.js": "/react-essentials/static/js/2.9c6ad89e.chunk.js",
+    "static/js/2.9c6ad89e.chunk.js.map": "/react-essentials/static/js/2.9c6ad89e.chunk.js.map",
+    "index.html": "/react-essentials/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/react-essentials/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.9c6ad89e.chunk.js.LICENSE.txt": "/react-essentials/static/js/2.9c6ad89e.chunk.js.LICENSE.txt",
+    "static/media/restaurant.8e3156ff.jpg": "/react-essentials/static/media/restaurant.8e3156ff.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.c679ce09.js",
+    "static/js/2.9c6ad89e.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.2d4a3cd2.chunk.js"
+  ]
+}
