@@ -16,7 +16,7 @@
 #band {
   font-family: cursive;
   color: tomato;
-  text-align: left;
+  text-align: center;
   padding-left: 10px;
 }
 
@@ -45,9 +45,47 @@
 }
 
 .navigator {
-  padding-left: 10px;
-  color: teal;
+  margin: 10px;
+  padding: 10px;
+  color: white;
   font-family: cursive;
   font-weight: bold;
   font-size: 25px;
+  background-color: teal;
+  display: inline;
+
+  border-radius: 10px;
+}
+
+.display-img {
+  padding: 10px;
+}
+
+.tagline {
+  color: purple;
+  animation-fill-mode: forwards;
+  animation-name: example;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+}
+@keyframes example {
+  from {
+    color: purple;
+  }
+  to {
+    color: pink;
+  }
+}
+
+#menu {
+  align-content: center;
+  display: inline-block;
+  background-color: palevioletred;
+  color: white;
+  font-weight: 700;
+}
+
+.menuitem {
+  padding: 10px;
+  border-style: dotted;
 }

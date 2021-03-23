@@ -30,18 +30,26 @@ function About() {
 function Main(props) {
   return (
     <section>
-      <h3> We server {props.adj} food here </h3>
-      <img src={restaurant} height={300} width={400} alt="photo of a recipe"/>
-      <img src={food} height={300} width={400} alt="photo of a recipe"/>
-      <img src={cupcake} height={300} width={400} alt="photo of a recipe"/>
-      <h3>Check out...</h3>
+      <h3 class="tagline"><i> We server {props.adj} food here </i></h3>
+      <img src={restaurant} height={300} width={400} class="display-img" alt="photo of a recipe"/>
+      <img src={food} height={300} width={400} class="display-img" alt="photo of a recipe"/>
+      <img src={cupcake} height={300} width={400} class="display-img" alt="photo of a recipe"/>
+      <h3 class="tagline">Check out...</h3>
       {/* this is JSX not CSS */}
       <div class="container">
-      <ul style={{textAlign:"center"}}> 
+      <table  id="menu">
+        <tr>
+        {props.dishes.map((dish) => (
+          <td class="menuitem" key={dish.id}>{dish.title}</td>
+          ))}
+        </tr>
+        
+      </table>
+      {/* <ul style={{textAlign:"center"}}> 
         {props.dishes.map((dish) => (
         <li key={dish.id}>{dish.title}</li>
         ))}
-      </ul>
+      </ul> */}
       </div>
       </section>
   );
@@ -81,7 +89,7 @@ function SecretComponent({ login }) {
     return (
       <>
       {/* <div>{JSON.stringify(data)}</div> */}
-      <div>{data.login}</div>
+      <div id ="orderfood">Hello...{data.login}</div>
       <h1>Order Food!!</h1>
       <h5>Food ordering Form here</h5>
       </>
@@ -110,9 +118,10 @@ function App({authorized,login}) {
       <div className="App">
         {/* <h1>Welcome</h1> to test using react library */}
       <Header name="Home" />
-      <div>
-        <a class="active navigator" href="/">Home</a>
-        <a class="navigator" href="#about">About</a>
+      <div class="navbar">
+        <a class="navigator" href="/">Home</a>
+        <a class="navigator" href="#orderfood">Order</a>
+        <a class="navigator" href="#review">Review</a>
       </div>
       {/* <nav className="navbar navbar-light">
         <navitem class="navigator"><Link to="">Home</Link></navitem>
