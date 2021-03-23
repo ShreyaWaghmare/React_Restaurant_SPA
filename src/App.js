@@ -12,7 +12,7 @@ import {Home,Events,Contact,Oops404} from './pages';
 function Header(props) {
   return (
     <header>
-      <h1 id="band"><u>{props.name}'s Kitchen</u></h1>
+      <h1 id="band"><u>{props.name} Kitchen</u></h1>
     </header>
   );
 }
@@ -109,7 +109,7 @@ function App({authorized,login}) {
       <>
       <div className="App">
         {/* <h1>Welcome</h1> to test using react library */}
-      <Header name="Shreya" />
+      <Header name="Home" />
       <div>
         <a class="active navigator" href="/">Home</a>
         <a class="navigator" href="#about">About</a>
