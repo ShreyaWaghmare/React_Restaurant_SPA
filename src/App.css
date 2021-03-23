@@ -13,6 +13,13 @@
   }
 }
 
+#band {
+  font-family: cursive;
+  color: tomato;
+  text-align: left;
+  padding-left: 10px;
+}
+
 .App-header {
   background-color: #282c34;
   min-height: 100vh;
@@ -35,4 +42,12 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navigator {
+  padding-left: 10px;
+  color: teal;
+  font-family: cursive;
+  font-weight: bold;
+  font-size: 25px;
 }

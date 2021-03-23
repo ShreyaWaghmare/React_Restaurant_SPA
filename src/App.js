@@ -1,31 +1,48 @@
 import { useState,useEffect } from 'react';
 import './App.css';
 import restaurant from './restaurant.jpg';
-import { Routes,Route} from "react-router-dom";
-import {Home,Events,Contact,About,Oops404} from './pages';
+import food from './food.jpg';
+import cupcake from './cupcake.png';
+import { Routes,Route,Link,NavLink} from "react-router-dom";
+import {Home,Events,Contact,Oops404} from './pages';
+
 
 // https://api.github.com/users/ShreyaWaghmare
 
 function Header(props) {
   return (
     <header>
-      <h1>{props.name}'s Kitchen</h1>
+      <h1 id="band"><u>{props.name}'s Kitchen</u></h1>
     </header>
   );
 }
-
+function About() {
+  return(
+      <div>
+          <h1>[About]</h1>
+          {/* <Link to="">Home</Link>
+          <Link to="events">Events</Link>
+          <Link to="contact">Contact</Link>
+          <Outlet /> */}
+      </div>
+  );
+}
 function Main(props) {
   return (
     <section>
       <h3> We server {props.adj} food here </h3>
-      <img src={restaurant} height={300} width={500} alt="photo of a recipe"/>
+      <img src={restaurant} height={300} width={400} alt="photo of a recipe"/>
+      <img src={food} height={300} width={400} alt="photo of a recipe"/>
+      <img src={cupcake} height={300} width={400} alt="photo of a recipe"/>
       <h3>Check out...</h3>
       {/* this is JSX not CSS */}
-      <ul style={{textAlign:"left"}}> 
+      <div class="container">
+      <ul style={{textAlign:"center"}}> 
         {props.dishes.map((dish) => (
         <li key={dish.id}>{dish.title}</li>
         ))}
       </ul>
+      </div>
       </section>
   );
 }
@@ -85,21 +102,30 @@ function PublicComponent() {
     <h5>Login window here</h5>
   );
 }
+
 // rplace props with {authorized}- destructuring arrays
 function App({authorized,login}) {
     return(
       <>
       <div className="App">
-        <h1>Welcome</h1> {/* to test using react library */}
-      <Header name="Shreya"/>
-      <Routes>
+        {/* <h1>Welcome</h1> to test using react library */}
+      <Header name="Shreya" />
+      <div>
+        <a class="active navigator" href="/">Home</a>
+        <a class="navigator" href="#about">About</a>
+      </div>
+      {/* <nav className="navbar navbar-light">
+        <navitem class="navigator"><Link to="">Home</Link></navitem>
+        <navitem class="navigator"><Route path="/about" element={<About />}/></navitem>
+      </nav> */}
+      {/* <Routes>
           <Route path="/" element={<Home />}/>
           <Route path="/about" element={<About />}>
-            <Route path="events" element={<Events />}/>
+            <Route path="events" element={<E vents />}/>
             <Route path="contacts" element={<Contact />}/>
           </Route>
           <Route path="*" element={<Oops404 />}/>
-        </Routes>
+        </Routes> */}
       
       <Main adj="amazing" dishes={dishObject}/>
       
