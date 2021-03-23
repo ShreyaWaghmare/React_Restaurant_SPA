@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/react-essentials/static/css/main.34fe44e3.chunk.css",
-    "main.js": "/react-essentials/static/js/main.ed8a910e.chunk.js",
-    "main.js.map": "/react-essentials/static/js/main.ed8a910e.chunk.js.map",
+    "main.css": "/react-essentials/static/css/main.dd038e90.chunk.css",
+    "main.js": "/react-essentials/static/js/main.05935ada.chunk.js",
+    "main.js.map": "/react-essentials/static/js/main.05935ada.chunk.js.map",
     "runtime-main.js": "/react-essentials/static/js/runtime-main.c679ce09.js",
     "runtime-main.js.map": "/react-essentials/static/js/runtime-main.c679ce09.js.map",
     "static/js/2.152409ea.chunk.js": "/react-essentials/static/js/2.152409ea.chunk.js",
     "static/js/2.152409ea.chunk.js.map": "/react-essentials/static/js/2.152409ea.chunk.js.map",
     "index.html": "/react-essentials/index.html",
-    "static/css/main.34fe44e3.chunk.css.map": "/react-essentials/static/css/main.34fe44e3.chunk.css.map",
+    "static/css/main.dd038e90.chunk.css.map": "/react-essentials/static/css/main.dd038e90.chunk.css.map",
     "static/js/2.152409ea.chunk.js.LICENSE.txt": "/react-essentials/static/js/2.152409ea.chunk.js.LICENSE.txt",
     "static/media/cupcake.e218a0e2.png": "/react-essentials/static/media/cupcake.e218a0e2.png",
     "static/media/food.b0f7867f.jpg": "/react-essentials/static/media/food.b0f7867f.jpg",
@@ -17,7 +17,7 @@
   "entrypoints": [
     "static/js/runtime-main.c679ce09.js",
     "static/js/2.152409ea.chunk.js",
-    "static/css/main.34fe44e3.chunk.css",
-    "static/js/main.ed8a910e.chunk.js"
+    "static/css/main.dd038e90.chunk.css",
+    "static/js/main.05935ada.chunk.js"
   ]
 }
