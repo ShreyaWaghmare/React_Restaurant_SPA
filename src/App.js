@@ -11,7 +11,7 @@ import {Home,Events,Contact,Oops404} from './pages';
 
 function Header(props) {
   return (
-    <header class="band">
+    <header class="band" id="home">
       <h1>{props.name} Kitchen</h1>
     </header>
   );
@@ -119,7 +119,7 @@ function App({authorized,login}) {
         {/* <h1>Welcome</h1> to test using react library */}
       <Header name="Home" />
       <div class="navbar">
-        <a class="navigator" href="/">Home</a>
+        <a class="navigator" href="#home">Home</a>
         <a class="navigator" href="#orderfood">Order</a>
         <a class="navigator" href="#review">Review</a>
       </div>
