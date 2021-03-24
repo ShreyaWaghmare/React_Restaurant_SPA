@@ -11,8 +11,8 @@ import {Home,Events,Contact,Oops404} from './pages';
 
 function Header(props) {
   return (
-    <header>
-      <h1 id="band"><u>{props.name} Kitchen</u></h1>
+    <header class="band">
+      <h1>{props.name} Kitchen</h1>
     </header>
   );
 }
@@ -90,7 +90,7 @@ function SecretComponent({ login }) {
       <>
       {/* <div>{JSON.stringify(data)}</div> */}
       <div id ="orderfood">Hello...{data.login}</div>
-      <h1>Order Food!!</h1>
+      <h1 class="band">Order Food!!</h1>
       <h5>Food ordering Form here</h5>
       </>
     );

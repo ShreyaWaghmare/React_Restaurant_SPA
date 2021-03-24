@@ -13,12 +13,25 @@
   }
 }
 
-#band {
-  font-family: cursive;
-  color: tomato;
+#footer {
   text-align: center;
-  padding-left: 10px;
 }
+
+.band {
+  font-family: cursive;
+  background-color: tomato;
+  font-size: large;
+  color: white;
+  text-align: center;
+  padding: 25px;
+  margin: 20px;
+}
+/* header h1 {
+  color: turquoise;
+  animation-name: name;
+  animation-duration: 4s;
+  animation-iteration-count: infinite;
+} */
 
 .App-header {
   background-color: #282c34;
@@ -88,4 +101,5 @@
 .menuitem {
   padding: 10px;
   border-style: dotted;
+  margin: 20px;
 }

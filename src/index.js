@@ -31,7 +31,7 @@ function AppTwo() {
       <button onClick={() => setEmotion("frustrated")}>Frustrate</button>
       <button onClick={() => setEmotion("happy")}>Happy</button>
       <button onClick={() => setSEmotion("tired")}>Tired</button>
-      <div id="review"><h3>Reviews:</h3></div>
+      <div id="review" class="band"><h3>Reviews:</h3></div>
       <input type="checkbox" value={checked} onChange={toggle}/>
       <p>{checked ? "loading reviews..." : ""}</p>
     </>
@@ -40,7 +40,7 @@ function AppTwo() {
 
 function Footer(props) {
   return (
-    <h5>Copyright {props.year}</h5>
+    <h5 id="footer">Copyright {props.year}</h5>
   );
 }
 
